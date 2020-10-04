@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NI8CQTrlZ9zXZ7AVhWlw3VfXNkN3RllO0FWzVpYYsR/MzRhjGWfqh+lNV5KHYUDm/TvtwmM/oaLYgbCOimHZ9A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Alexa\\aulasdotnet\\RestWithAsp-NetUdemy\\RestWithAspNetUdemy\\RestWithAspNetUdemy\\RestWithAspNetUdemy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alexa\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
