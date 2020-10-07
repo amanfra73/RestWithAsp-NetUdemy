@@ -12,8 +12,8 @@ namespace RestWithAspNetUdemy.Controllers
     public class CalculatorController : ControllerBase
     {
 
-        // GET api/values/S/S
-        [HttpGet("{firstnumber}/{secondnumber}")]
+        // GET api/values/sum/S/S
+        [HttpGet("sum/{firstnumber}/{secondnumber}")]
 
         
             public IActionResult Sum(string firstnumber, string secondnumber)
@@ -26,6 +26,19 @@ namespace RestWithAspNetUdemy.Controllers
             }
             return BadRequest("Invalid Input") ; 
             }
+
+        // GET api/values/subtraction/S/S
+        [HttpGet("subtraction/{firstnumber}/{secondnumber}")]
+        public IActionResult Subtraction(string firstnumber, string secondnumber)
+        {
+
+            if (IsNumeric(firstnumber) && IsNumeric(secondnumber))
+            {
+                var sum = ConvertToDecimal(firstnumber) - ConvertToDecimal(secondnumber);
+                return Ok(sum.ToString());
+            }
+            return BadRequest("Invalid Input");
+        }
 
         private decimal ConvertToDecimal(string firstnumber)
         {
